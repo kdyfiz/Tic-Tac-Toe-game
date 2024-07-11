@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="startScreen">
+            <h1>Welcome to Tic Tac Toe</h1>
+            <form id="playerForm">
+                <div class="player-input">
+                    <label for="player1">Player 1 Name:</label>
+                    <input type="text" id="player1" required>
+                </div>
+                <div class="player-input"> <!-- Added this div -->
+                    <label for="player2">Player 2 Name:</label>
+                    <input type="text" id="player2" required>
+                </div> <!-- Added this div -->
+                <button type="submit">Start Game</button>
+            </form>
+        </div>
+        <div id="gameScreen" class="hidden">
+            <h1>Tic Tac Toe</h1>
+            <div id="board" class="board">
+                <!-- Game board cells -->
+            </div>
+            <button id="resetBtn">New Game</button>
+            <p id="message"></p>
+        </div>
+    </div>
+    <div id="resultModal" class="modal">
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
